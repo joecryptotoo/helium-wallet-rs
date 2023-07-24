@@ -8,3 +8,5 @@ RUN apt-get update && \
 COPY . .
 
 RUN cargo build
+
+ENTRYPOINT /usr/src/helium-wallet-rs/target/debug/helium-wallet
